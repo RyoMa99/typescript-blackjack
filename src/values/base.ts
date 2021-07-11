@@ -5,7 +5,7 @@ abstract class ValueObject<T> {
     if (this.isValid(val)){
       this._val = val;
     }else{
-      throw Error("argument is invalid.");
+      throw Error(`argument: ${val} is invalid.`);
     }
   }
 
