@@ -1,7 +1,5 @@
-console.log("hello world");
+import CardNumber from "./values/CardNumber";
 
-function hello(name: string): string {
-  return "Hello, " + name + "!";
-}
-
-hello("World");
+const Card1 = CardNumber.of("A");
+const Card2 = CardNumber.of("5");
+const Card3 = CardNumber.of("taro");
