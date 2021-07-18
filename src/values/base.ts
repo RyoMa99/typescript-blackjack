@@ -2,9 +2,9 @@ abstract class ValueObject<T> {
   private readonly _val: T;
 
   constructor(val: T) {
-    if (this.isValid(val)){
+    if (this.isValid(val)) {
       this._val = val;
-    }else{
+    } else {
       throw Error(`argument: ${val} is invalid.`);
     }
   }
@@ -14,7 +14,6 @@ abstract class ValueObject<T> {
   get(): T {
     return this._val;
   }
-
 }
 
 export default ValueObject;
